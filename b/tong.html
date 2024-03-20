@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính tổng</title>
+</head>
+<body>
+<b><h2>Nhập số</h2></b>
+<label><input id="number" type="number"></label>
+<button onclick="sum()">Tính tổng</button>
+<p id="result"></p>
+</body>
+<script>
+  function sum() {
+    let n = parseInt(document.getElementById("number").value);
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+      sum += i;
+    }
+    document.getElementById("result").innerHTML = "Tổng của các số từ 1 đến " + n + " là " + sum;
+  }
+</script>
+</html>
